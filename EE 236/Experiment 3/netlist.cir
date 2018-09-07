@@ -1,0 +1,16 @@
+Comparator using IC LM311
+.include lm311.txt
+x1 1 2 3 4 5 6 LM311
+v1 1 0 sin(5 5 1k 0 0)
+v2 2 0 2
+vdd 3 0 12
+vr 7 0 12
+vss 4 0 0
+v3 6 0 0
+r1 7 5 18k
+.tran 0.0001m 10m
+.control
+run
+plot v(5) v(1)
+.endc
+.end

@@ -1,0 +1,139 @@
+EE236: Experiment No. 1
+RC Circuits
+Mohd Safwan, 17D070047
+July 24, 2018
+** All experiment reports may not contain all fields in this
+format,This document is just for your reference**
+
+1
+1.1
+
+Overview of the experiment
+Aim of the experiment
+
+To measure voltage across capacitor aginst square wave voltage of different
+frequecies.
+
+1.2
+
+Methods
+
+In your own words, describe how you set out to realize the goal of the experiment. Only 1 paragraph of a brief overview of your approach is expected
+here. Do not list your observations here. I used
+
+2
+
+Design
+
+In this section, explain your design strategy for the experiment.Mention all
+the design steps you follow for each part of the experiment.An equation based
+analysis, with supporting circuit diagrams is expected. Circuit diagrams
+must be made in Xcircuit.
+vo1 − vo2 = −gm RD (vin1 − vin2 )
+1
+
+(1)
+
+a=b+c
+
+(2)
+
+(copy-paste from handout will be counted as plagiarism).
+
+3
+3.1
+
+Simulation results
+Code snippet
+
+Enter your ngspice code here:
+*IV Charactersics of Normal Diode
+Resistive Load
+R1 1 2 100
+Default Diode
+D1 3 0
+Dummy voltage source to measure current.
+v1 2 3 dc 0v
+Voltage Source
+Vin 1 0 dc 5.0v
+DC analysis: Vin is swept from 0.0V to 6.0V in steps of 0.05V
+.control
+dc Vin 0.0001 6 0.0001
+run
+white background
+set color0 =white
+set color1=black
+plot i(v1) vs V(2)
+.endc
+.end
+
+3.2
+
+Simulation results
+
+Enter your simulation plots, together with text explaining the plots. All
+figures must have legible fonts, and a caption that makes sense.
+
+2
+
+4
+4.1
+
+Experimental results
+Part-1
+
+Results of part 1 of experiment should be added here.Mention what component values you used with appropriate circuit diagram, and what your
+measured values were.
+Table 1: Table Caption
+Sr. No. column1 column2 column3
+row1
+row2
+
+4.2
+
+Part-2
+
+Mention what component values you used with appropriate circuit diagram,
+and what your measured values were. Add any DSO screen captures you
+may have got on your phone. Address all the questions which are asked in
+the labsheet.
+
+4.3
+
+Part-3
+
+Mention what component values you used with appropriate circuit diagram,
+and what your measured values were. Add any DSO screen captures you
+may have got on your phone. Address all the questions asked in labsheet
+and try to write explanations for the results you obtain.
+
+3
+
+4
+
+5
+
+4.4
+
+Optional part
+
+Add your observations and comments on any additional(optional) exercises
+you perform
+
+5
+
+Experiment completion status
+
+In this part , mention which sections you completed in lab and which you
+couldn’t,also give suitable explanation stating why you couldn’t complete it.
+
+6
+
+Questions for reflection
+
+Address all the reflection questions here which will be given at end of each
+lab.
+
+6
+
+

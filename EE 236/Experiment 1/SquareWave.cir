@@ -1,0 +1,12 @@
+Square Wave
+
+r1 1 0 1k
+vin 1 0 pulse (-5 5 0ns 0ns 0ns 1ms 10ms)  
+.tran 0.01ms 40ms
+.control
+run
+
+plot v(1)
+
+.endc
+.end

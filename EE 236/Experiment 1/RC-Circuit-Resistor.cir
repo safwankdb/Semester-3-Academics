@@ -1,0 +1,13 @@
+RC Circuit
+
+r1 1 2 1k
+c1 2 0 1u
+vin 1 0 pulse (-5 5 0ns 0ns 0ns 0.5ms 1ms)
+.tran 0.001ms 10ms
+.control
+run
+
+plot v(1)-v(2)
+
+.endc
+.end
